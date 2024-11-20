@@ -1,0 +1,59 @@
+﻿### Procedure in 10 Points
+
+1. Create a directory named `Academic` in your project folder.
+2. Create a file named `Student.java` and define an abstract class `Student` with fields for name, ID, and email, and an abstract method `displayInfo()`.
+3. Create a file named `Undergraduate.java` and define a class `Undergraduate` that extends `Student`. Include fields for major and year.
+4. In `Undergraduate.java`, implement the `displayInfo()` method and define methods for `registerWorkshop(String workshopName)` and `attendEvent(String eventName)`.
+5. Create a file named `Postgraduate.java` and define a class `Postgraduate` that extends `Student`. Include fields for specialization and thesis topic.
+6. In `Postgraduate.java`, implement the `displayInfo()` method and define methods for `registerWorkshop(String workshopName)` and `attendEvent(String eventName)`.
+7. Create a file named `Participation.java` and define an interface `Participation` with methods for `registerWorkshop(String workshopName)` and `attendEvent(String eventName)`.
+8. Create a file named `AcademicDemo.java` and implement the `main` method to create instances of `Undergraduate` and `Postgraduate`.
+9. In `AcademicDemo.java`, display the information for each student and call the methods for registering workshops and attending events.
+10. Compile all Java files using `javac Academic/*.java` and run the main class with `java Academic.AcademicDemo` to see the output.
+
+### Class Diagram
+
+Here’s a simple class diagram representing the structure of the classes and their relationships:
+
+```
++-------------------+
+|     Student       |
++-------------------+
+| - name: String    |
+| - id: String      |
+| - email: String   |
++-------------------+
+| + displayInfo()   |
++-------------------+
+         ^
+         |
+         |------------------+
+         |                  |
++----------------+   +--------------------+
+| Undergraduate   |   |  Postgraduate      |
++----------------+   +--------------------+
+| - major: String |   | - specialization: String |
+| - year: int     |   | - thesisTopic: String    |
++----------------+   +--------------------+
+| + displayInfo() |   | + displayInfo()    |
+| + registerWorkshop(String) |
+| + attendEvent(String)       |
++----------------+   +--------------------+
+         ^
+         |
+         |
++-------------------+
+|   Participation    |
++-------------------+
+| + registerWorkshop(String) |
+| + attendEvent(String)      |
++-------------------+
+```
+
+In this diagram:
+
+- `Student` is an abstract class that defines the common properties and methods for both `Undergraduate` and `Postgraduate`.
+- Both `Undergraduate` and `Postgraduate` extend `Student` and implement the methods from the `Participation` interface.
+- The `Participation` interface defines methods that both student types must implement. 
+
+Let me know if you need any further details!
