@@ -1,0 +1,10 @@
+Nov 21, 2024 7:37:24 PM PatientManagement logActivity
+INFO: Receptionist logged in
+Nov 21, 2024 7:38:27 PM PatientManagement logActivity
+INFO: Added patient: ID: 1, Name: John Smith, Address: New York city, Phone: 1234567890, Disease: Fever, Gender: Male, Age: 18
+Nov 21, 2024 7:38:32 PM PatientManagement logActivity
+INFO: Receptionist logged out
+Nov 21, 2024 7:38:33 PM PatientManagement logActivity
+INFO: Nurse logged in
+Nov 21, 2024 7:38:33 PM PatientManagement logActivity
+INFO: Nurse viewed patient details
