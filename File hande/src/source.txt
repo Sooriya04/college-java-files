@@ -1,0 +1,5 @@
+The quick brown fox jumps over the lazy dog. 
+This sentence contains every letter of the English alphabet. 
+Programming is a blend of logic and creativity, and it's fascinating to learn. 
+12345, testing numbers along with some symbols like @, #, $, %, ^, &. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
